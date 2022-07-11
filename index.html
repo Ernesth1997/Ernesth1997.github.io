@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud-Firebase</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="bg-dark">
+              
+    <!-- ADD TASK -->
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4"> <center>Agregar Afiliado</center> </h1>
+              <h2 class="h5"> Nombre Estudiante: Ernesth Yañez Mayorga</h2>
+
+              <form id="form-firebase">
+                <label for="title">Nombre(s):</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  class="form-control mb-3"                                    
+                  autocomplete="off"
+                  autofocus
+                />
+
+                <label for="title">Apellido(s):</label>
+                <input
+                  type="text"
+                  id="apellido"
+                  class="form-control mb-3"                                    
+                  autocomplete="off"
+                  autofocus
+                />
+
+                <label for="title">Nro. de documento:</label>
+                <input
+                  type="text"
+                  id="ci"
+                  class="form-control mb-3"                                    
+                  autocomplete="off"
+                  autofocus
+                />
+                <label for="title">Dirección:</label>
+                <input
+                  type="text"
+                  id="direccion"
+                  class="form-control mb-3"                                    
+                  autocomplete="off"
+                  autofocus
+                />
+                <label for="title">Teléfono:</label>
+                <input
+                  type="text"
+                  id="telefono"
+                  class="form-control mb-3"                                    
+                  autocomplete="off"
+                  autofocus
+                />
+
+                <button class="btn btn-primary" id="btn-form-firebase">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- lista de usuario mediante javascript -->
+        <div class="col-md-6" id="usuarios"></div>
+      </div>
+    </div>
+
+    <!-- importa el js index con todas sus funciones -->
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
